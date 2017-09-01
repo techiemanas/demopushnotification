@@ -4,9 +4,9 @@
         <link rel="manifest" href="manifest.json">
         <script src="BMSPushSDK.js"></script>
         <script>
-             var bmsPush = new BMSPush()
+             var bmsPush = new BMSPush();
     function callback(response) {
-        alert(response.response)
+        //alert(response.response)
     }
     var initParams = {
         "appGUID":"8a29e6a3-e63b-41e7-865a-1e8859047e71",
@@ -16,7 +16,7 @@
 
     bmsPush.initialize(initParams, callback);
     bmsPush.register(function(response) {
-		alert(response.response)
+		//alert(response.response)
 	});
 
         </script>
