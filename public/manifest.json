@@ -1,3 +1,4 @@
 {
-  "name": "demopushnotification.herokuapp.com"
+  "name": "demopushnotification.herokuapp.com",
+  "gcm_sender_id": "983209403345"
 }
