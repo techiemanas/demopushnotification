@@ -2,6 +2,22 @@
     <head>
         <link rel="manifest" href="manifest.json">
         <script src="BMSPushSDK.js" async></script>
+        <script>
+             var bmsPush = new BMSPush()
+    function callback(response) {
+        alert(response.response)
+    }
+    var initParams = {
+        "appGUID":"8a29e6a3-e63b-41e7-865a-1e8859047e71",
+        "appRegion":".au-syd.bluemix.net"
+    };
+
+    bmsPush.initialize(initParams, callback);
+    bmsPush.register(function(response) {
+		alert(response.response)
+	});
+
+        </script>
     </head>
     <body>
         <h1>Hello World</h1>
