@@ -27,7 +27,7 @@
       
 
         function registerWithUser() {
-          var userId = document.getElementById('userId');
+          var userId = document.getElementById('userId').value;
           bmsPush.unRegisterDevice(function(response) {
             bmsPush.registerWithUserId(userId,function(response) {
               alert(response.response);
